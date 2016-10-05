@@ -1,0 +1,35 @@
+VAGRANTFILE_API_VERSION = '2'
+
+Vagrant.require_version '>= 1.5.0'
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  config.vm.hostname = 'graylog'
+  config.vm.box = 'VM5'
+  config.vm.network "public_network"
+
+  #config.berkshelf.enabled = true
+  config.vm.network :forwarded_port, guest: 8080, host: 8280
+  config.vm.network :forwarded_port, guest: 8005, host: 8205 
+  config.vm.network :forwarded_port, guest: 27017, host: 27017
+
+  config.vm.provision :chef_solo do |chef|
+    #chef.install = true
+    #chef.version = "12.6.0"
+    
+    chef.json = {
+     # deploy_war: {
+       #source_url: "http://nexus.rlcatalyst.com/nexus/content/repositories/petclinic/org/catalyst/petclinic/2.12.62/petclinic-2.12.62.war"
+       # }
+       # rlcatalyst: {
+       #  nexusUrl: "http://nexus.rlcatalyst.com/nexus/content/repositories/petclinic/org/catalyst/petclinic/2.12.62/petclinic-2.12.62.war",
+       #   app_version: '2.12.62',
+       #   applicationNodeIP: 'localhost'
+       # }  
+  }
+
+    chef.run_list = [
+      'recipe[graylog]'
+    ]
+  end
+end

@@ -1,0 +1,175 @@
+I, [2016-09-19T13:34:47.387937 #7856]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2016-09-19T13:34:50.597059 #7856]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2016-09-19T13:34:50.597059 #7856]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m0.00s).
+I, [2016-09-19T13:34:50.612627 #7856]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2016-09-19T13:34:50.612627 #7856]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2016-09-19T13:34:59.875848 #7856]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-09-19T13:35:01.964324 #7856]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'bento/ubuntu-14.04'...
+I, [2016-09-19T13:36:21.418717 #7856]  INFO -- default-ubuntu-1404: [KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2016-09-19T13:36:21.717109 #7856]  INFO -- default-ubuntu-1404: ==> default: Checking if box 'bento/ubuntu-14.04' is up to date...
+I, [2016-09-19T13:36:25.250040 #7856]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: kitchen-pam-default-ubuntu-1404_default_1474272385159_49431
+I, [2016-09-19T13:36:27.824793 #7856]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2016-09-19T13:36:28.011922 #7856]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2016-09-19T13:36:28.011922 #7856]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2016-09-19T13:36:28.210375 #7856]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2016-09-19T13:36:28.353547 #7856]  INFO -- default-ubuntu-1404:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2016-09-19T13:36:29.030593 #7856]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2016-09-19T13:36:42.307281 #7856]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2016-09-19T13:36:43.587215 #7856]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2222
+I, [2016-09-19T13:36:43.587215 #7856]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2016-09-19T13:36:43.587215 #7856]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2016-09-19T13:37:22.886212 #7856]  INFO -- default-ubuntu-1404:     default: 
+I, [2016-09-19T13:37:22.886212 #7856]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2016-09-19T13:37:22.886212 #7856]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2016-09-19T13:37:24.137123 #7856]  INFO -- default-ubuntu-1404:     default: 
+I, [2016-09-19T13:37:24.137123 #7856]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2016-09-19T13:37:24.689963 #7856]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if it's present...
+I, [2016-09-19T13:37:25.531079 #7856]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2016-09-19T13:37:26.342527 #7856]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2016-09-19T13:37:26.342527 #7856]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2016-09-19T13:37:26.429588 #7856]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2016-09-19T13:37:34.217932 #7856]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2016-09-19T13:37:39.992743 #7856]  INFO -- default-ubuntu-1404: [SSH] Established
+I, [2016-09-19T13:37:39.995648 #7856]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2016-09-19T13:37:40.003462 #7856]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (2m49.38s).
+I, [2016-09-19T13:37:40.005418 #7856]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2016-09-19T13:37:40.014216 #7856]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-09-19T13:37:40.016172 #7856]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2016-09-19T13:37:40.022039 #7856]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 4.3.5...
+I, [2016-09-19T13:37:40.754049 #7856]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-09-19T13:37:40.765792 #7856]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2016-09-19T13:37:40.832389 #7856]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-09-19T13:37:40.833340 #7856]  INFO -- default-ubuntu-1404: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
+I, [2016-09-19T13:37:40.835285 #7856]  INFO -- default-ubuntu-1404: Trying wget...
+I, [2016-09-19T13:37:54.871735 #7856]  INFO -- default-ubuntu-1404: Download complete.
+I, [2016-09-19T13:38:01.004434 #7856]  INFO -- default-ubuntu-1404: ubuntu 14.04 x86_64
+I, [2016-09-19T13:38:01.005410 #7856]  INFO -- default-ubuntu-1404: Getting information for chef stable  for ubuntu...
+I, [2016-09-19T13:38:01.005410 #7856]  INFO -- default-ubuntu-1404: downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=14.04&m=x86_64
+I, [2016-09-19T13:38:01.006387 #7856]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1435/metadata.txt
+I, [2016-09-19T13:38:01.007367 #7856]  INFO -- default-ubuntu-1404: trying wget...
+I, [2016-09-19T13:38:02.699220 #7856]  INFO -- default-ubuntu-1404: sha1	d719902505c6189908001bb2677c487ccd73b937
+I, [2016-09-19T13:38:02.702147 #7856]  INFO -- default-ubuntu-1404: sha256	9dfb47dda29e9abbf4cdb6f690578bb3c63d57353f7af907ed289021df13f6b2
+I, [2016-09-19T13:38:02.705080 #7856]  INFO -- default-ubuntu-1404: url	https://packages.chef.io/stable/ubuntu/14.04/chef_12.14.60-1_amd64.deb
+I, [2016-09-19T13:38:02.706058 #7856]  INFO -- default-ubuntu-1404: version	12.14.60
+I, [2016-09-19T13:38:02.710947 #7856]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2016-09-19T13:38:02.733431 #7856]  INFO -- default-ubuntu-1404: downloading https://packages.chef.io/stable/ubuntu/14.04/chef_12.14.60-1_amd64.deb
+I, [2016-09-19T13:38:02.734407 #7856]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1435/chef_12.14.60-1_amd64.deb
+I, [2016-09-19T13:38:02.735385 #7856]  INFO -- default-ubuntu-1404: trying wget...
+I, [2016-09-19T13:38:41.031896 #7856]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2016-09-19T13:38:41.485542 #7856]  INFO -- default-ubuntu-1404: 
+I, [2016-09-19T13:38:41.486466 #7856]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-09-19T13:38:41.487453 #7856]  INFO -- default-ubuntu-1404: 
+I, [2016-09-19T13:38:41.488419 #7856]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-09-19T13:38:41.490377 #7856]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-09-19T13:38:41.490377 #7856]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major releases.
+I, [2016-09-19T13:38:41.491353 #7856]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-09-19T13:38:41.492330 #7856]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2016-09-19T13:38:41.492330 #7856]  INFO -- default-ubuntu-1404: 
+I, [2016-09-19T13:38:41.493308 #7856]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-09-19T13:38:41.493308 #7856]  INFO -- default-ubuntu-1404: 
+I, [2016-09-19T13:38:41.494286 #7856]  INFO -- default-ubuntu-1404: Installing chef 
+I, [2016-09-19T13:38:41.494286 #7856]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2016-09-19T13:38:42.163734 #7856]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2016-09-19T13:38:42.339279 #7856]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32949 files and directories currently installed.)
+I, [2016-09-19T13:38:42.352003 #7856]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.14.60-1_amd64.deb ...
+I, [2016-09-19T13:38:42.365675 #7856]  INFO -- default-ubuntu-1404: Unpacking chef (12.14.60-1) ...
+I, [2016-09-19T13:40:06.469186 #7856]  INFO -- default-ubuntu-1404: Setting up chef (12.14.60-1) ...
+I, [2016-09-19T13:40:07.010838 #7856]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2016-09-19T13:40:07.851853 #7856]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2016-09-19T13:40:11.006630 #7856]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.14.60
+I, [2016-09-19T13:40:14.836276 #7856]  INFO -- default-ubuntu-1404: Creating a new client identity for default-ubuntu-1404 using the validator key.
+I, [2016-09-19T13:40:15.020067 #7856]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["pam::default"]
+I, [2016-09-19T13:40:15.042551 #7856]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
+I, [2016-09-19T13:40:15.043529 #7856]  INFO -- default-ubuntu-1404:   - pam (1.0.3)
+I, [2016-09-19T13:40:15.043529 #7856]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
+I, [2016-09-19T13:40:15.044507 #7856]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2016-09-19T13:40:15.056271 #7856]  INFO -- default-ubuntu-1404: Converging 1 resources
+I, [2016-09-19T13:40:15.057226 #7856]  INFO -- default-ubuntu-1404: Recipe: pam::default
+I, [2016-09-19T13:40:15.079715 #7856]  INFO -- default-ubuntu-1404:   * template[/etc/pam.d/su] action create
+I, [2016-09-19T13:40:15.080678 #7856]  INFO -- default-ubuntu-1404:     - update content in file /etc/pam.d/su from 57b364 to a29192
+I, [2016-09-19T13:40:15.081672 #7856]  INFO -- default-ubuntu-1404:     --- /etc/pam.d/su	2014-02-17 02:38:11.000000000 +0000
+I, [2016-09-19T13:40:15.082634 #7856]  INFO -- default-ubuntu-1404:     +++ /etc/pam.d/.chef-su20160919-1533-17x5zeg	2016-09-19 08:10:15.085110999 +0000
+I, [2016-09-19T13:40:15.083611 #7856]  INFO -- default-ubuntu-1404:     @@ -1,63 +1,8 @@
+I, [2016-09-19T13:40:15.084588 #7856]  INFO -- default-ubuntu-1404:     -#
+I, [2016-09-19T13:40:15.084588 #7856]  INFO -- default-ubuntu-1404:     -# The PAM configuration file for the Shadow `su' service
+I, [2016-09-19T13:40:15.085567 #7856]  INFO -- default-ubuntu-1404:     -#
+I, [2016-09-19T13:40:15.086545 #7856]  INFO -- default-ubuntu-1404:     -
+I, [2016-09-19T13:40:15.086545 #7856]  INFO -- default-ubuntu-1404:     -# This allows root to su without passwords (normal operation)
+I, [2016-09-19T13:40:15.087522 #7856]  INFO -- default-ubuntu-1404:     -auth       sufficient pam_rootok.so
+I, [2016-09-19T13:40:15.087522 #7856]  INFO -- default-ubuntu-1404:     -
+I, [2016-09-19T13:40:15.087522 #7856]  INFO -- default-ubuntu-1404:     -# Uncomment this to force users to be a member of group root
+I, [2016-09-19T13:40:15.087522 #7856]  INFO -- default-ubuntu-1404:     -# before they can use `su'. You can also add "group=foo"
+I, [2016-09-19T13:40:15.087522 #7856]  INFO -- default-ubuntu-1404:     -# to the end of this line if you want to use a group other
+I, [2016-09-19T13:40:15.087522 #7856]  INFO -- default-ubuntu-1404:     -# than the default "root" (but this may have side effect of
+I, [2016-09-19T13:40:15.087522 #7856]  INFO -- default-ubuntu-1404:     -# denying "root" user, unless she's a member of "foo" or explicitly
+I, [2016-09-19T13:40:15.087522 #7856]  INFO -- default-ubuntu-1404:     -# permitted earlier by e.g. "sufficient pam_rootok.so").
+I, [2016-09-19T13:40:15.087522 #7856]  INFO -- default-ubuntu-1404:     -# (Replaces the `SU_WHEEL_ONLY' option from login.defs)
+I, [2016-09-19T13:40:15.087522 #7856]  INFO -- default-ubuntu-1404:     -# auth       required   pam_wheel.so
+I, [2016-09-19T13:40:15.087522 #7856]  INFO -- default-ubuntu-1404:     -
+I, [2016-09-19T13:40:15.093387 #7856]  INFO -- default-ubuntu-1404:     -# Uncomment this if you want wheel members to be able to
+I, [2016-09-19T13:40:15.093387 #7856]  INFO -- default-ubuntu-1404:     -# su without a password.
+I, [2016-09-19T13:40:15.093387 #7856]  INFO -- default-ubuntu-1404:     -# auth       sufficient pam_wheel.so trust
+I, [2016-09-19T13:40:15.093387 #7856]  INFO -- default-ubuntu-1404:     -
+I, [2016-09-19T13:40:15.093387 #7856]  INFO -- default-ubuntu-1404:     -# Uncomment this if you want members of a specific group to not
+I, [2016-09-19T13:40:15.095343 #7856]  INFO -- default-ubuntu-1404:     -# be allowed to use su at all.
+I, [2016-09-19T13:40:15.095343 #7856]  INFO -- default-ubuntu-1404:     -# auth       required   pam_wheel.so deny group=nosu
+I, [2016-09-19T13:40:15.095343 #7856]  INFO -- default-ubuntu-1404:     -
+I, [2016-09-19T13:40:15.095343 #7856]  INFO -- default-ubuntu-1404:     -# Uncomment and edit /etc/security/time.conf if you need to set
+I, [2016-09-19T13:40:15.095343 #7856]  INFO -- default-ubuntu-1404:     -# time restrainst on su usage.
+I, [2016-09-19T13:40:15.095343 #7856]  INFO -- default-ubuntu-1404:     -# (Replaces the `PORTTIME_CHECKS_ENAB' option from login.defs
+I, [2016-09-19T13:40:15.095343 #7856]  INFO -- default-ubuntu-1404:     -# as well as /etc/porttime)
+I, [2016-09-19T13:40:15.096319 #7856]  INFO -- default-ubuntu-1404:     -# account    requisite  pam_time.so
+I, [2016-09-19T13:40:15.099254 #7856]  INFO -- default-ubuntu-1404:     -
+I, [2016-09-19T13:40:15.099254 #7856]  INFO -- default-ubuntu-1404:     -# This module parses environment configuration file(s)
+I, [2016-09-19T13:40:15.100232 #7856]  INFO -- default-ubuntu-1404:     -# and also allows you to use an extended config
+I, [2016-09-19T13:40:15.100232 #7856]  INFO -- default-ubuntu-1404:     -# file /etc/security/pam_env.conf.
+I, [2016-09-19T13:40:15.100232 #7856]  INFO -- default-ubuntu-1404:     -# 
+I, [2016-09-19T13:40:15.100232 #7856]  INFO -- default-ubuntu-1404:     -# parsing /etc/environment needs "readenv=1"
+I, [2016-09-19T13:40:15.102187 #7856]  INFO -- default-ubuntu-1404:     -session       required   pam_env.so readenv=1
+I, [2016-09-19T13:40:15.102187 #7856]  INFO -- default-ubuntu-1404:     -# locale variables are also kept into /etc/default/locale in etch
+I, [2016-09-19T13:40:15.102187 #7856]  INFO -- default-ubuntu-1404:     -# reading this file *in addition to /etc/environment* does not hurt
+I, [2016-09-19T13:40:15.102187 #7856]  INFO -- default-ubuntu-1404:     -session       required   pam_env.so readenv=1 envfile=/etc/default/locale
+I, [2016-09-19T13:40:15.103165 #7856]  INFO -- default-ubuntu-1404:     -
+I, [2016-09-19T13:40:15.103165 #7856]  INFO -- default-ubuntu-1404:     -# Defines the MAIL environment variable
+I, [2016-09-19T13:40:15.103165 #7856]  INFO -- default-ubuntu-1404:     -# However, userdel also needs MAIL_DIR and MAIL_FILE variables
+I, [2016-09-19T13:40:15.105121 #7856]  INFO -- default-ubuntu-1404:     -# in /etc/login.defs to make sure that removing a user 
+I, [2016-09-19T13:40:15.106116 #7856]  INFO -- default-ubuntu-1404:     -# also removes the user's mail spool file.
+I, [2016-09-19T13:40:15.106116 #7856]  INFO -- default-ubuntu-1404:     -# See comments in /etc/login.defs
+I, [2016-09-19T13:40:15.106116 #7856]  INFO -- default-ubuntu-1404:     -#
+I, [2016-09-19T13:40:15.106116 #7856]  INFO -- default-ubuntu-1404:     -# "nopen" stands to avoid reporting new mail when su'ing to another user
+I, [2016-09-19T13:40:15.109030 #7856]  INFO -- default-ubuntu-1404:     -session    optional   pam_mail.so nopen
+I, [2016-09-19T13:40:15.109030 #7856]  INFO -- default-ubuntu-1404:     -
+I, [2016-09-19T13:40:15.109030 #7856]  INFO -- default-ubuntu-1404:     -# Sets up user limits, please uncomment and read /etc/security/limits.conf
+I, [2016-09-19T13:40:15.110007 #7856]  INFO -- default-ubuntu-1404:     -# to enable this functionality.
+I, [2016-09-19T13:40:15.110984 #7856]  INFO -- default-ubuntu-1404:     -# (Replaces the use of /etc/limits in old login)
+I, [2016-09-19T13:40:15.110984 #7856]  INFO -- default-ubuntu-1404:     -# session    required   pam_limits.so
+I, [2016-09-19T13:40:15.110984 #7856]  INFO -- default-ubuntu-1404:     -
+I, [2016-09-19T13:40:15.111962 #7856]  INFO -- default-ubuntu-1404:     -# The standard Unix authentication modules, used with
+I, [2016-09-19T13:40:15.111962 #7856]  INFO -- default-ubuntu-1404:     -# NIS (man nsswitch) as well as normal /etc/passwd and
+I, [2016-09-19T13:40:15.112940 #7856]  INFO -- default-ubuntu-1404:     -# /etc/shadow entries.
+I, [2016-09-19T13:40:15.112940 #7856]  INFO -- default-ubuntu-1404:     +auth sufficient pam_rootok.so 
+I, [2016-09-19T13:40:15.112940 #7856]  INFO -- default-ubuntu-1404:     +session required pam_env.so readenv=1
+I, [2016-09-19T13:40:15.112940 #7856]  INFO -- default-ubuntu-1404:     +session required pam_env.so readenv=1 envfile=/etc/default/locale
+I, [2016-09-19T13:40:15.114895 #7856]  INFO -- default-ubuntu-1404:     +session optional pam_mail.so nopen
+I, [2016-09-19T13:40:15.114895 #7856]  INFO -- default-ubuntu-1404:      @include common-auth
+I, [2016-09-19T13:40:15.114895 #7856]  INFO -- default-ubuntu-1404:      @include common-account
+I, [2016-09-19T13:40:15.114895 #7856]  INFO -- default-ubuntu-1404:      @include common-session
+I, [2016-09-19T13:40:15.114895 #7856]  INFO -- default-ubuntu-1404:     -
+I, [2016-09-19T13:40:15.117827 #7856]  INFO -- default-ubuntu-1404:     -
+I, [2016-09-19T13:40:15.139354 #7856]  INFO -- default-ubuntu-1404: 
+I, [2016-09-19T13:40:15.140313 #7856]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2016-09-19T13:40:15.140313 #7856]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2016-09-19T13:40:15.141290 #7856]  INFO -- default-ubuntu-1404: Chef Client finished, 1/1 resources updated in 04 seconds
+I, [2016-09-19T13:40:15.203858 #7856]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (2m35.19s).
+I, [2016-09-19T13:40:15.204834 #7856]  INFO -- default-ubuntu-1404: -----> Setting up <default-ubuntu-1404>...
+I, [2016-09-19T13:40:15.207768 #7856]  INFO -- default-ubuntu-1404: Finished setting up <default-ubuntu-1404> (0m0.00s).
+I, [2016-09-19T13:40:15.208744 #7856]  INFO -- default-ubuntu-1404: -----> Verifying <default-ubuntu-1404>...
+I, [2016-09-19T13:40:15.210700 #7856]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-09-19T13:40:15.212678 #7856]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2016-09-19T13:40:15.215587 #7856]  INFO -- default-ubuntu-1404: Finished verifying <default-ubuntu-1404> (0m0.00s).
+I, [2016-09-19T13:40:15.216565 #7856]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2016-09-19T13:40:18.906824 #7856]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2016-09-19T13:40:20.262659 #7856]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2016-09-19T13:40:24.958364 #7856]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2016-09-19T13:40:24.958364 #7856]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m9.74s).
+I, [2016-09-19T13:40:24.958364 #7856]  INFO -- default-ubuntu-1404: Finished testing <default-ubuntu-1404> (5m37.57s).

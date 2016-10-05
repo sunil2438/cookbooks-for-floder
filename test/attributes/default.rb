@@ -1,0 +1,1 @@
+default['test']['dir'] = "/tmp/sunil"

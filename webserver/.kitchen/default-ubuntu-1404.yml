@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+port: '2201'
+username: vagrant
+ssh_key: C:/Users/rle0330/Downloads/chef-starter/chef-repo/cookbooks/webserver/.kitchen/kitchen-vagrant/kitchen-webserver-default-ubuntu-1404/.vagrant/machines/default/virtualbox/private_key
+last_action: verify

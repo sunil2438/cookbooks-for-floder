@@ -1,0 +1,52 @@
+I, [2016-09-15T12:40:18.255208 #13832]  INFO -- Kitchen: -----> Starting Kitchen (v1.7.3)
+I, [2016-09-15T12:40:36.256579 #13832]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2016-09-15T12:40:36.284040 #13832]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1404>...
+I, [2016-09-15T12:40:38.354631 #13832]  INFO -- Kitchen: -----> Testing <default-ubuntu-1404>
+I, [2016-09-15T12:40:38.354631 #13832]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2016-09-15T12:43:00.252783 #13832]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2016-09-15T12:43:00.363253 #13832] ERROR -- Kitchen: ------Exception-------
+E, [2016-09-15T12:43:00.363253 #13832] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-09-15T12:43:00.363253 #13832] ERROR -- Kitchen: Message: Failed to complete #converge action: [no metadata.json or metadata.rb found at C:/Users/rle0330/Downloads/chef-starter/chef-repo/cookbooks/app_data_handler]
+E, [2016-09-15T12:43:00.363253 #13832] ERROR -- Kitchen: ---Nested Exception---
+E, [2016-09-15T12:43:00.363253 #13832] ERROR -- Kitchen: Class: IOError
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: Message: no metadata.json or metadata.rb found at C:/Users/rle0330/Downloads/chef-starter/chef-repo/cookbooks/app_data_handler
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ridley-4.6.1/lib/ridley/chef/cookbook.rb:40:in `from_path'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-4.3.5/lib/berkshelf/locations/path.rb:21:in `cached_cookbook'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-4.3.5/lib/berkshelf/dependency.rb:126:in `cached_cookbook'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-4.3.5/lib/berkshelf/lockfile.rb:435:in `block in reduce!'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-4.3.5/lib/berkshelf/lockfile.rb:416:in `each'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-4.3.5/lib/berkshelf/lockfile.rb:416:in `reduce!'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-4.3.5/lib/berkshelf/installer.rb:32:in `run'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-4.3.5/lib/berkshelf/berksfile.rb:421:in `install'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-4.3.5/lib/berkshelf/berksfile.rb:630:in `block in vendor'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.1.0/tmpdir.rb:88:in `mktmpdir'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-4.3.5/lib/berkshelf/berksfile.rb:628:in `vendor'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/provisioner/chef/berkshelf.rb:68:in `block in resolve'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/shell/basic.rb:20:in `mute'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/provisioner/chef/berkshelf.rb:64:in `resolve'
+E, [2016-09-15T12:43:00.364229 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/provisioner/chef/common_sandbox.rb:286:in `block in resolve_with_berkshelf'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/provisioner/chef/common_sandbox.rb:285:in `synchronize'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/provisioner/chef/common_sandbox.rb:285:in `resolve_with_berkshelf'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/provisioner/chef/common_sandbox.rb:251:in `prepare_cookbooks'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/provisioner/chef/common_sandbox.rb:50:in `populate'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/provisioner/chef_base.rb:117:in `create_sandbox'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/provisioner/chef_solo.rb:44:in `create_sandbox'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/provisioner/base.rb:63:in `call'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:373:in `block in converge_action'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:513:in `call'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:369:in `converge_action'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-09-15T12:43:00.365206 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:189:in `block in test'
+E, [2016-09-15T12:43:00.366184 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-15T12:43:00.366184 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:185:in `test'
+E, [2016-09-15T12:43:00.366184 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-09-15T12:43:00.366184 #13832] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.7.3/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-09-15T12:43:00.366184 #13832] ERROR -- Kitchen: ----------------------

@@ -1,0 +1,11 @@
+
+root_password_sha2 = <%= @conf_vars[:password] %>
+root_email = <%= @conf_vars[:email]%>
+root_timezone = UTC
+elasticsearch_http_enabled = false
+elasticsearch_discovery_zen_ping_unicast_hosts = 192.168.152.171:9300 
+is_master = true
+elasticsearch_max_docs_per_index = 20000000
+elasticsearch_max_number_of_indices = 20
+elasticsearch_shards = 1
+elasticsearch_replicas = 0

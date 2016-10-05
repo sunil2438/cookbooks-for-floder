@@ -1,0 +1,104 @@
+I, [2016-09-19T13:40:24.958364 #7856]  INFO -- default-centos-72: -----> Cleaning up any prior instances of <default-centos-72>
+I, [2016-09-19T13:40:24.958364 #7856]  INFO -- default-centos-72: -----> Destroying <default-centos-72>...
+I, [2016-09-19T13:40:24.958364 #7856]  INFO -- default-centos-72: Finished destroying <default-centos-72> (0m0.00s).
+I, [2016-09-19T13:40:24.958364 #7856]  INFO -- default-centos-72: -----> Testing <default-centos-72>
+I, [2016-09-19T13:40:24.958364 #7856]  INFO -- default-centos-72: -----> Creating <default-centos-72>...
+I, [2016-09-19T13:40:26.819056 #7856]  INFO -- default-centos-72: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-09-19T13:40:27.485992 #7856]  INFO -- default-centos-72: ==> default: Importing base box 'bento/centos-7.2'...
+I, [2016-09-19T13:41:08.660432 #7856]  INFO -- default-centos-72: [KProgress: 20%[KProgress: 50%[KProgress: 70%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2016-09-19T13:41:08.979112 #7856]  INFO -- default-centos-72: ==> default: Checking if box 'bento/centos-7.2' is up to date...
+I, [2016-09-19T13:41:17.360174 #7856]  INFO -- default-centos-72: ==> default: Setting the name of the VM: kitchen-pam-default-centos-72_default_1474272677271_87449
+I, [2016-09-19T13:41:19.797504 #7856]  INFO -- default-centos-72: ==> default: Clearing any previously set network interfaces...
+I, [2016-09-19T13:41:20.028482 #7856]  INFO -- default-centos-72: ==> default: Preparing network interfaces based on configuration...
+I, [2016-09-19T13:41:20.028482 #7856]  INFO -- default-centos-72:     default: Adapter 1: nat
+I, [2016-09-19T13:41:20.260798 #7856]  INFO -- default-centos-72: ==> default: Forwarding ports...
+I, [2016-09-19T13:41:20.403899 #7856]  INFO -- default-centos-72:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2016-09-19T13:41:20.996701 #7856]  INFO -- default-centos-72: ==> default: Booting VM...
+I, [2016-09-19T13:41:26.977096 #7856]  INFO -- default-centos-72: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2016-09-19T13:41:27.568617 #7856]  INFO -- default-centos-72:     default: SSH address: 127.0.0.1:2222
+I, [2016-09-19T13:41:27.568617 #7856]  INFO -- default-centos-72:     default: SSH username: vagrant
+I, [2016-09-19T13:41:27.568617 #7856]  INFO -- default-centos-72:     default: SSH auth method: private key
+I, [2016-09-19T13:41:58.649918 #7856]  INFO -- default-centos-72:     default: Warning: Remote connection disconnect. Retrying...
+I, [2016-09-19T13:42:06.864340 #7856]  INFO -- default-centos-72:     default: 
+I, [2016-09-19T13:42:06.864340 #7856]  INFO -- default-centos-72:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2016-09-19T13:42:06.864340 #7856]  INFO -- default-centos-72:     default: this with a newly generated keypair for better security.
+I, [2016-09-19T13:42:10.137709 #7856]  INFO -- default-centos-72:     default: 
+I, [2016-09-19T13:42:10.137709 #7856]  INFO -- default-centos-72:     default: Inserting generated public key within guest...
+I, [2016-09-19T13:42:10.702398 #7856]  INFO -- default-centos-72:     default: Removing insecure key from the guest if it's present...
+I, [2016-09-19T13:42:11.016177 #7856]  INFO -- default-centos-72:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2016-09-19T13:42:12.019451 #7856]  INFO -- default-centos-72: ==> default: Machine booted and ready!
+I, [2016-09-19T13:42:12.019451 #7856]  INFO -- default-centos-72: ==> default: Checking for guest additions in VM...
+I, [2016-09-19T13:42:12.162216 #7856]  INFO -- default-centos-72: ==> default: Setting hostname...
+I, [2016-09-19T13:42:13.810079 #7856]  INFO -- default-centos-72: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2016-09-19T13:42:17.069795 #7856]  INFO -- default-centos-72: [SSH] Established
+I, [2016-09-19T13:42:17.082710 #7856]  INFO -- default-centos-72: Vagrant instance <default-centos-72> created.
+I, [2016-09-19T13:42:17.085661 #7856]  INFO -- default-centos-72: Finished creating <default-centos-72> (1m52.13s).
+I, [2016-09-19T13:42:17.086621 #7856]  INFO -- default-centos-72: -----> Converging <default-centos-72>...
+I, [2016-09-19T13:42:17.089553 #7856]  INFO -- default-centos-72: Preparing files for transfer
+I, [2016-09-19T13:42:17.090545 #7856]  INFO -- default-centos-72: Preparing dna.json
+I, [2016-09-19T13:42:17.093473 #7856]  INFO -- default-centos-72: Resolving cookbook dependencies with Berkshelf 4.3.5...
+I, [2016-09-19T13:42:17.257701 #7856]  INFO -- default-centos-72: Removing non-cookbook files before transfer
+I, [2016-09-19T13:42:17.274322 #7856]  INFO -- default-centos-72: Preparing solo.rb
+I, [2016-09-19T13:42:17.343732 #7856]  INFO -- default-centos-72: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-09-19T13:42:17.355481 #7856]  INFO -- default-centos-72: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
+I, [2016-09-19T13:42:17.367248 #7856]  INFO -- default-centos-72: Trying wget...
+I, [2016-09-19T13:42:18.801658 #7856]  INFO -- default-centos-72: Download complete.
+I, [2016-09-19T13:42:18.920887 #7856]  INFO -- default-centos-72: el 7 x86_64
+I, [2016-09-19T13:42:18.920887 #7856]  INFO -- default-centos-72: Getting information for chef stable  for el...
+I, [2016-09-19T13:42:18.920887 #7856]  INFO -- default-centos-72: downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=&p=el&pv=7&m=x86_64
+I, [2016-09-19T13:42:18.920887 #7856]  INFO -- default-centos-72:   to file /tmp/install.sh.6767/metadata.txt
+I, [2016-09-19T13:42:18.923818 #7856]  INFO -- default-centos-72: trying wget...
+I, [2016-09-19T13:42:19.993865 #7856]  INFO -- default-centos-72: sha1	3ac0dc2a7a589ca738a322df5d2da01bb04969b7
+I, [2016-09-19T13:42:19.993865 #7856]  INFO -- default-centos-72: sha256	0e6c12ac598e71c95a921f9e3642cfce72d59eb7650c90d90594b21d4ee10049
+I, [2016-09-19T13:42:19.993865 #7856]  INFO -- default-centos-72: url	https://packages.chef.io/stable/el/7/chef-12.14.60-1.el7.x86_64.rpm
+I, [2016-09-19T13:42:19.993865 #7856]  INFO -- default-centos-72: version	12.14.60
+I, [2016-09-19T13:42:19.995820 #7856]  INFO -- default-centos-72: downloaded metadata file looks valid...
+I, [2016-09-19T13:42:20.039888 #7856]  INFO -- default-centos-72: downloading https://packages.chef.io/stable/el/7/chef-12.14.60-1.el7.x86_64.rpm
+I, [2016-09-19T13:42:20.039888 #7856]  INFO -- default-centos-72:   to file /tmp/install.sh.6767/chef-12.14.60-1.el7.x86_64.rpm
+I, [2016-09-19T13:42:20.040867 #7856]  INFO -- default-centos-72: trying wget...
+I, [2016-09-19T13:42:44.108457 #7856]  INFO -- default-centos-72: Comparing checksum with sha256sum...
+I, [2016-09-19T13:42:46.174150 #7856]  INFO -- default-centos-72: 
+I, [2016-09-19T13:42:46.174150 #7856]  INFO -- default-centos-72: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-09-19T13:42:46.174150 #7856]  INFO -- default-centos-72: 
+I, [2016-09-19T13:42:46.174150 #7856]  INFO -- default-centos-72: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-09-19T13:42:46.174150 #7856]  INFO -- default-centos-72: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-09-19T13:42:46.174150 #7856]  INFO -- default-centos-72: be upgraded without warning on new releases, even to new major releases.
+I, [2016-09-19T13:42:46.174150 #7856]  INFO -- default-centos-72: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-09-19T13:42:46.174150 #7856]  INFO -- default-centos-72: CI/CD environments.
+I, [2016-09-19T13:42:46.175129 #7856]  INFO -- default-centos-72: 
+I, [2016-09-19T13:42:46.175129 #7856]  INFO -- default-centos-72: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-09-19T13:42:46.175129 #7856]  INFO -- default-centos-72: 
+I, [2016-09-19T13:42:46.175129 #7856]  INFO -- default-centos-72: Installing chef 
+I, [2016-09-19T13:42:46.175129 #7856]  INFO -- default-centos-72: installing with rpm...
+I, [2016-09-19T13:42:50.835406 #7856]  INFO -- default-centos-72: warning: /tmp/install.sh.6767/chef-12.14.60-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2016-09-19T13:42:53.449558 #7856]  INFO -- default-centos-72: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+I, [2016-09-19T13:42:53.474957 #7856]  INFO -- default-centos-72: Updating / installing...
+I, [2016-09-19T13:43:34.127247 #7856]  INFO -- default-centos-72:    1:chef-12.14.60-1.el7                                                (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 51%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+I, [2016-09-19T13:43:37.139532 #7856]  INFO -- default-centos-72: Thank you for installing Chef!
+I, [2016-09-19T13:43:38.312658 #7856]  INFO -- default-centos-72: Transferring files to <default-centos-72>
+I, [2016-09-19T13:43:46.073179 #7856]  INFO -- default-centos-72: Starting Chef Client, version 12.14.60
+I, [2016-09-19T13:43:50.377879 #7856]  INFO -- default-centos-72: Creating a new client identity for default-centos-72 using the validator key.
+I, [2016-09-19T13:43:50.455092 #7856]  INFO -- default-centos-72: resolving cookbooks for run list: ["pam::default"]
+I, [2016-09-19T13:43:50.477575 #7856]  INFO -- default-centos-72: Synchronizing Cookbooks:
+I, [2016-09-19T13:43:50.489308 #7856]  INFO -- default-centos-72:   - pam (1.0.3)
+I, [2016-09-19T13:43:50.501040 #7856]  INFO -- default-centos-72: Installing Cookbook Gems:
+I, [2016-09-19T13:43:50.501040 #7856]  INFO -- default-centos-72: Compiling Cookbooks...
+I, [2016-09-19T13:43:50.501040 #7856]  INFO -- default-centos-72: [2016-09-19T08:13:48+00:00] WARN: No pam services have been defined
+I, [2016-09-19T13:43:50.501040 #7856]  INFO -- default-centos-72: Converging 0 resources
+I, [2016-09-19T13:43:50.556762 #7856]  INFO -- default-centos-72: 
+I, [2016-09-19T13:43:50.556762 #7856]  INFO -- default-centos-72: Running handlers:
+I, [2016-09-19T13:43:50.556762 #7856]  INFO -- default-centos-72: Running handlers complete
+I, [2016-09-19T13:43:50.556762 #7856]  INFO -- default-centos-72: Chef Client finished, 0/0 resources updated in 04 seconds
+I, [2016-09-19T13:43:50.652571 #7856]  INFO -- default-centos-72: Finished converging <default-centos-72> (1m33.56s).
+I, [2016-09-19T13:43:50.653546 #7856]  INFO -- default-centos-72: -----> Setting up <default-centos-72>...
+I, [2016-09-19T13:43:50.655518 #7856]  INFO -- default-centos-72: Finished setting up <default-centos-72> (0m0.00s).
+I, [2016-09-19T13:43:50.656479 #7856]  INFO -- default-centos-72: -----> Verifying <default-centos-72>...
+I, [2016-09-19T13:43:50.658434 #7856]  INFO -- default-centos-72: Preparing files for transfer
+I, [2016-09-19T13:43:50.659414 #7856]  INFO -- default-centos-72: Transferring files to <default-centos-72>
+I, [2016-09-19T13:43:50.662345 #7856]  INFO -- default-centos-72: Finished verifying <default-centos-72> (0m0.00s).
+I, [2016-09-19T13:43:50.664300 #7856]  INFO -- default-centos-72: -----> Destroying <default-centos-72>...
+I, [2016-09-19T13:43:54.248233 #7856]  INFO -- default-centos-72: ==> default: Forcing shutdown of VM...
+I, [2016-09-19T13:43:55.898293 #7856]  INFO -- default-centos-72: ==> default: Destroying VM and associated drives...
+I, [2016-09-19T13:43:56.468733 #7856]  INFO -- default-centos-72: Vagrant instance <default-centos-72> destroyed.
+I, [2016-09-19T13:43:56.468733 #7856]  INFO -- default-centos-72: Finished destroying <default-centos-72> (0m5.80s).
+I, [2016-09-19T13:43:56.468733 #7856]  INFO -- default-centos-72: Finished testing <default-centos-72> (3m31.51s).

@@ -1,0 +1,4 @@
+SCM:Software configuration management is the process of identifying, organizing & controlling changes to the software during development & maintenance. 
+Version controls :A version control system (also known as a Revision Control System) is a repository of files, often the files for the source code of computer programs, with monitored access. Every change made to the source is tracked, along with who made the change, why they made it, and references to problems fixed, or enhancements introduced, by the change.
+Build Tools:Build automation involves scripting or automating the process of compiling computer source code into binary code. Below is a list of notable tools associated with automating build processes.
+Jenkins:Jenkins is an open source continuous integration tool written in Java. The project was forked from Hudson after a dispute with Oracle. 
